@@ -10,7 +10,7 @@ const PaginaInicial = () => {
 
   const fetchData = async (page = 0) => {
     const response = await axios.get(
-      `https://api.nasa.gov/neo/rest/v1/neo/browse?page=${page}&api_key=y0PUGwJ6cEmX2PDEEtjV3NzAUN2O5zEe9MaapzU7`
+      `https://api.nasa.gov/neo/rest/v1/neo/browse?page=${page}&api_key=hh4w7OqhLK11XdaqbrCIQtorHZsPNSIsBdI5LNgP`
     );
     setItemData(response.data.near_earth_objects);
     setCarregar(false);
